@@ -11,9 +11,15 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        int euro = Converter.euro(140);
-        int dollar = Converter.dollar(180);
-        System.out.println("140 rubles are " + euro + " euro.");
-        System.out.println("180 rubles are " + dollar + " dollars.");
+        int inEuro = 140;
+        int expectEuro = 2;
+        int outE = Converter.euro(inEuro);
+        boolean passE = expectEuro == outE;
+        int inDollar = 180;
+        int expectDollar = 3;
+        int outD = Converter.dollar(inDollar);
+        boolean passD = expectDollar == outD;
+        System.out.println("140 rubles are 2 euro. Test result: " + passE);
+        System.out.println("180 rubles are 3 dollars. Test result: " + passD);
     }
 }
