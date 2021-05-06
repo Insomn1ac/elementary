@@ -1,7 +1,6 @@
 package ru.job4j.converter;
 
 public class Converter {
-
     public static int euro(int x) {
         return x / 70;
     }
